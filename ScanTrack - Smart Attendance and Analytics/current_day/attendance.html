@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <title>ScanTrack</title>
+    <link rel="stylesheet" href="attendance.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="../Calendar/calendar.html" class="navbar-logo">ScanTrack</a>
+            <a href="../SubjectColumn/subject.html" target="_blank">Subject</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="circle" id="circle">
+            <h2 class="center" id="dayNumber">22</h2>
+        </div>
+
+        <!-- Below the circle -->
+        <div class="labels">
+            <div class="bluebullets">
+                <p class="paragraph" id="currentDay">Current day</p>
+            </div>
+            <div class="square">
+                <p class="paragraph" id="absent">Absent</p>
+            </div>
+            <div class="blackcircle">
+                <p class="paragraph" id="present">Present</p>
+            </div>
+            <div class="whitecircle">
+                <p class="paragraph" id="excuse">Excuse</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="attendance.js"></script>
+</body>
+</html>

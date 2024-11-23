@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: linear-gradient(100deg, #6f8ff5, #437eeb, #6e2fe2, #fdb64c);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.rectangle{
+    background-color: #202122;
+    color: #fff;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 10px;
+    padding: 20px;
+    width: 50%;
+    height: 500%;
+    border-radius: 5px;
+    transform: translate(168.8%, -150%);
+}
+.rectangle1{
+    background-color: #202122;
+    color: #fff;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 10px;
+    padding: 20px;
+    width: 50%;
+    height: 300%;
+    border-radius: 5px;
+    transform: translate(62.2%, -20%);
+}
+.rectangle2{
+    background-color: #202122;
+    color: #fff;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 10px;
+    padding: 20px;
+    width: 50%;
+    height: 300%;
+    border-radius: 5px;
+    transform: translate(-44%, 120%);
+}
+.rectangle3{
+    background-color: #202122;
+    color: #fff;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 10px;
+    padding: 20px;
+    width: 50%;
+    height: 300%;
+    border-radius: 5px;
+    transform: translate(-150%, 260%);
+}
+button {
+    background: none;
+    border: none;
+    color: white;
+    font: inherit;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    outline: none;
+}

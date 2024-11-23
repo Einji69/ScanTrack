@@ -1,0 +1,175 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Style */
+body {
+    background: linear-gradient(100deg, #6f8ff5, #437eeb, #6e2fe2, #fdb64c);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column; /* Ensure the navbar stays at the top */
+}
+
+/* Navbar Style */
+.navbar {
+    width: 100%;
+    background-color: #437eeb;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar-logo {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar-toggle {
+    font-size: 18px;
+    background-color: #0950d4;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-toggle:hover {
+    background-color: #3d75d3;
+}
+
+/* Container and Circle Style */
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 70px; /* Add space for navbar */
+}
+a:link, a:visited {
+    background-color: #437eeb;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 15px;
+  }
+  
+  a:hover, a:active {
+    background-color: #fdb64c;
+  }
+.circle {
+    width: 300px;
+    height: 300px;
+    background-color: #437eeb;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+h2 {
+    color: #fff;
+    font-style: italic;
+    font-size: 6rem;
+}
+
+.center {
+    font-size: 600%;
+}
+
+.circle:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Labels below the Circle */
+.labels {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.bluebullets, .square, .blackcircle, .whitecircle {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.bluebullets {
+    background-color: #0950d4;
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+}
+
+.square {
+    background-color: #ffffff;
+    border-radius: 10%;
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+}
+
+.blackcircle {
+    background-color: #000000;
+    position: absolute;
+    bottom: 0;
+    left: 60%;
+}
+
+.whitecircle {
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    left: 85%;
+}
+
+.paragraph {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #000;
+    font-size: 12px;
+    z-index: 0;
+}
+
+/* Checkmark Style */
+.paragraph.checked::before {
+    content: "✔";
+    margin-left: 5px;
+    color: green;
+}

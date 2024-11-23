@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <title>ScanTrack</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="../loadingscreen_homepage/loading.html" class="navbar-logo">ScanTrack</a>
+        </div>
+    </nav>
+
+    <!-- Profile Content -->
+    <div class="profile-container">
+        <div class="profile-card">
+            <div class="profile-info">
+                <!-- Profile Picture Section -->
+                <div class="profile-image-container">
+                    <img id="profileImage" src="../images/default.jpeg" alt="Profile Picture" class="profile-image" />
+                    <input type="file" id="profileImageInput" class="profile-image-input" accept="image/*" />
+                    <label for="profileImageInput" class="change-image-btn">Change Profile Picture</label>
+                </div>
+                
+                <h2 id="userName">Juan Miguel Austero</h2>
+                <p id="QR">1200393-I</p>
+
+                <!-- QR Code Section -->
+                <div class="qr-code-container">
+                    <p id="qrText">Scan the QR code for more details:</p>
+                    <img src="../images/qr-placeholder.png" id="qrCode" alt="QR Code" class="qr-code" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <title>ScanTrack</title>
+    <link rel="stylesheet" href="subjectdesign.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section>
+        <header>
+            <a href="../current_day/attendance.html"><i class="fa fa-chevron-circle-left" style="font-size:30px"></i></a>
+        </header>
+    </section>
+    <h2 class="header2">Subject</h2>
+    
+    <table class="box-table">
+        <tr>
+            <th>Descriptive Title</th>
+            <th>Time in</th>
+        </tr>
+        <tr>
+            <td><label>
+                <input type="checkbox" onclick="recordLoginTime(this, 'loggedInTimeCell1')">IT Professional Ethics</label>
+            </td>
+            <td id="loggedInTimeCell1">--:--:--</td>
+        </tr>
+        <tr>
+            <td><label>
+                <input type="checkbox" onclick="recordLoginTime(this, 'loggedInTimeCell2')">Application Development</label>
+            </td>
+            <td id="loggedInTimeCell2">--:--:--</td>
+        </tr>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
